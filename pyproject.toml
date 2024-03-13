@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "try-python-pptx"
+version = "0.1.0"
+description = ""
+authors = ["nersonu <nersonu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-pptx = "^0.6.23"
+matplotlib = "^3.8.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.2"
+pyright = "^1.1.353"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".venv",
+]
+target-version = "py311"
+
+[tool.ruff.isort]
+combine-as-imports = true
+lines-between-types = 1
+lines-after-imports = 2
+
